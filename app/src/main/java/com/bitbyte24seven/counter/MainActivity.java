@@ -10,7 +10,7 @@ import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
 
-    //variab;e using in project
+    //variable using in project
     int scoreTeamA;
     int scoreTeamB;
 
@@ -61,9 +61,8 @@ public class MainActivity extends AppCompatActivity {
 
     //display score Team B
     public void displayForTeamB(int scoreB) {
-        int TeamBScore = scoreB;
         TextView team_b_score = findViewById(R.id.team_b_score);
-        team_b_score.setText(String.valueOf(TeamBScore));
+        team_b_score.setText(String.valueOf(scoreB));
     }
 
     // onclick and add 6 score in Team B
