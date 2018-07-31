@@ -155,7 +155,6 @@
                 android:onClick="fourPointsTeamB"
                 android:text="@string/_4_point" />
 
-
             <Button
                 style="@style/ButtonStyle"
                 android:layout_width="match_parent"
@@ -173,7 +172,6 @@
                 android:onClick="twoPointTeamB"
                 android:text="@string/_2_point" />
 
-
             <Button
                 style="@style/ButtonStyle"
                 android:layout_width="match_parent"
@@ -184,7 +182,6 @@
 
 
         </LinearLayout>
-
 
     </LinearLayout>
 

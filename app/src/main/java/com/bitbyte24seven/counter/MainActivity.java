@@ -94,7 +94,6 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void resetScore(View view) {
-
         //define the alert Dialog
         alertDialog();
     }
