@@ -21,16 +21,22 @@ public class MainActivity extends AppCompatActivity {
     }
 
 
-    //display the score
+    //display the score TeamA
     public void displayForTeamA(int score) {
 
         TextView scoreView = findViewById(R.id.team_a_score);
         scoreView.setText(String.valueOf(score));
     }
 
-    //onclick and add 2 score  teamA
-    public void twoPoint(View view) {
-        scoreTeamA = scoreTeamA + 2;
+    //onclick and Add 6 score
+    public void sixPointsTeamA(View view) {
+        scoreTeamA = scoreTeamA + 6;
+        displayForTeamA(scoreTeamA);
+    }
+
+    //onnclick and add 4 score
+    public void fourPointsTeamA(View view) {
+        scoreTeamA = scoreTeamA + 4;
         displayForTeamA(scoreTeamA);
     }
 
@@ -40,8 +46,14 @@ public class MainActivity extends AppCompatActivity {
         displayForTeamA(scoreTeamA);
     }
 
+    //onclick and add 2 score  teamA
+    public void twoPoint(View view) {
+        scoreTeamA = scoreTeamA + 2;
+        displayForTeamA(scoreTeamA);
+    }
+
     //onclick and add 1 points TeamA
-    public void freeThro(View view) {
+    public void oneRunTeamA(View view) {
         scoreTeamA = scoreTeamA + 1;
         displayForTeamA(scoreTeamA);
     }
@@ -52,6 +64,18 @@ public class MainActivity extends AppCompatActivity {
         int TeamBScore = scoreB;
         TextView team_b_score = findViewById(R.id.team_b_score);
         team_b_score.setText(String.valueOf(TeamBScore));
+    }
+
+    // onclick and add 6 score in Team B
+    public void sixPointsTeamB(View view) {
+        scoreTeamB = scoreTeamB + 6;
+        displayForTeamB(scoreTeamB);
+    }
+
+    // onclick and add 4 score in Team B
+    public void fourPointsTeamB(View view) {
+        scoreTeamB = scoreTeamB + 4;
+        displayForTeamB(scoreTeamB);
     }
 
     //onclick and add 3 points team B
@@ -67,7 +91,7 @@ public class MainActivity extends AppCompatActivity {
     }
 
     //onclick and add 1 pints team B
-    public void freeThroTeamB(View view) {
+    public void oneRunTeamB(View view) {
         scoreTeamB = scoreTeamB + 1;
         displayForTeamB(scoreTeamB);
     }
@@ -76,7 +100,8 @@ public class MainActivity extends AppCompatActivity {
 
         alertDialog();
     }
-    public  void  alertDialog (){
+
+    public void alertDialog() {
         AlertDialog.Builder builder1 = new AlertDialog.Builder(this);
         builder1.setMessage("Do you want to reset.");
         builder1.setCancelable(true);
@@ -101,4 +126,6 @@ public class MainActivity extends AppCompatActivity {
         AlertDialog alert11 = builder1.create();
         alert11.show();
     }
+
+
 }
