@@ -100,6 +100,7 @@ public class MainActivity extends AppCompatActivity {
         alertDialog();
     }
 
+    //set aleartDialog
     public void alertDialog() {
         AlertDialog.Builder builder1 = new AlertDialog.Builder(this);
         builder1.setMessage("Do you want to reset.");
