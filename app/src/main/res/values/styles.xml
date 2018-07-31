@@ -4,9 +4,42 @@
     <style name="AppTheme" parent="Theme.AppCompat.NoActionBar">
         <!-- Customize your theme here. -->
         <!-- Primary theme color of the app (sets background color of app bar) -->
-        <item name="colorPrimary">#5BA124 </item>
-        <!-- Background color of buttons in the app -->
-        <item name="colorButtonNormal">#5BA124 </item>
+        <item name="colorPrimary">#5BA124</item>
+        <!--&lt;!&ndash; Background color of buttons in the app &ndash;&gt;-->
+        <!--<item name="colorButtonNormal">#5BA124</item>-->
+    </style>
+
+
+    <style name="ButtonStyle">
+
+        <!-- Change the text Colour of the button -->
+        <item name="android:textColor">#FFFF</item>
+        <!-- Change the Text Size  of the button -->
+        <item name="android:textSize">20sp</item>
+        <!-- Change the Background of the button -->
+        <item name="android:background">#5BA124</item>
+        <!-- Change the Style of the button -->
+        <item name="android:textStyle">normal</item>
+        <!-- Margin form left of the button -->
+        <item name="android:layout_marginLeft">24dp</item>
+        <!--  Margin form Right of the button -->
+        <item name="android:layout_marginRight">24dp</item>
+        <!--  Margin form Top of the button  -->
+        <item name="android:layout_marginTop">8dp</item>
+    </style>
+
+
+    <style name="TextStyle">
+        <!-- Change the text Size of the Text -->
+        <item name="android:textSize">24sp</item>
+        <!-- Change the text in ALL CAPS of the Text -->
+        <item name="android:textAllCaps">true</item>
+        <!-- Change the text Colour of the Text -->
+        <item name="android:textColor">@android:color/white</item>
+        <!-- Change the text Style of the Text -->
+        <item name="android:textStyle">bold</item>
+        <!-- Margin From Top of the Text -->
+        <item name="android:layout_marginTop">16dp</item>
 
     </style>
 

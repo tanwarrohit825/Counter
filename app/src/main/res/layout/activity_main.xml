@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/linearLayout2"
     android:layout_width="match_parent"
@@ -27,101 +26,71 @@
 
             <TextView
                 android:id="@+id/teamA"
+                style="@style/TextStyle"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
 
-                android:layout_marginTop="16dp"
                 android:fontFamily="@font/medievalsharp"
                 android:gravity="center_vertical|center|top"
-                android:text="@string/team_a"
-                android:textAllCaps="true"
-                android:textColor="@android:color/white"
-
-                android:textSize="24sp"
-
-                android:textStyle="bold" />
+                android:text="@string/team_a" />
 
             <TextView
                 android:id="@+id/team_a_score"
+                style="@style/TextStyle"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
+
                 android:layout_gravity="center_vertical|center|top"
                 android:layout_marginTop="16dp"
+
                 android:text="@string/_0"
-                android:textColor="@android:color/white"
-
-
-                android:textSize="56sp" />
+                android:textSize="56sp"
+                android:textStyle="normal" />
 
             <Button
+                style="@style/ButtonStyle"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
 
-                android:layout_marginLeft="24dp"
-
-                android:layout_marginRight="24dp"
                 android:layout_marginTop="24dp"
+
                 android:onClick="sixPointsTeamA"
-
-
-                android:text="@string/_6_point"
-                android:textSize="20sp" />
+                android:text="@string/_6_point" />
 
             <Button
+                style="@style/ButtonStyle"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
 
-                android:layout_marginLeft="24dp"
-
-                android:layout_marginRight="24dp"
-                android:layout_marginTop="8dp"
                 android:onClick="fourPointsTeamA"
-
-
-                android:text="@string/_4_point"
-                android:textSize="20sp" />
+                android:text="@string/_4_point" />
 
             <Button
+                style="@style/ButtonStyle"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
 
-                android:layout_marginLeft="24dp"
-
-                android:layout_marginRight="24dp"
-                android:layout_marginTop="8dp"
                 android:onClick="threePoints"
-
-
-                android:text="@string/_3_point"
-                android:textSize="20sp" />
+                android:text="@string/_3_point" />
 
             <Button
                 android:id="@+id/twoPoint"
+                style="@style/ButtonStyle"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
 
-                android:layout_marginLeft="24dp"
-
-                android:layout_marginRight="24dp"
-                android:layout_marginTop="8dp"
                 android:onClick="twoPoint"
-
-                android:text="@string/_2_point"
-                android:textSize="20sp" />
+                android:text="@string/_2_point" />
 
 
             <Button
                 android:id="@+id/free"
+                style="@style/ButtonStyle"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
 
-                android:layout_marginLeft="24dp"
-                android:layout_marginRight="24dp"
-                android:layout_marginTop="8dp"
-
                 android:onClick="oneRunTeamA"
-                android:text="@string/_1_run"
-                android:textSize="20sp" />
+                android:text="@string/_1_run" />
 
 
         </LinearLayout>
@@ -132,7 +101,6 @@
             android:layout_height="match_parent"
             android:layout_marginTop="26dp"
             android:background="@android:color/black">
-
 
         </LinearLayout>
 
@@ -146,99 +114,73 @@
 
             <TextView
                 android:id="@+id/teamB"
+                style="@style/TextStyle"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
 
-                android:layout_marginTop="16dp"
                 android:fontFamily="@font/medievalsharp"
                 android:gravity="center_vertical|center|top"
-                android:text="@string/team_b"
-                android:textAllCaps="true"
-                android:textColor="@android:color/white"
-                android:textSize="24sp"
 
-                android:textStyle="bold" />
+                android:text="@string/team_b"
+                android:textSize="24sp" />
 
             <TextView
                 android:id="@+id/team_b_score"
+                style="@style/TextStyle"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_gravity="center_vertical|center|top"
-                android:layout_marginTop="16dp"
-                android:text="@string/_0"
-                android:textColor="@android:color/white"
 
-                android:textSize="56sp" />
+                android:layout_gravity="center_vertical|center|top"
+
+                android:text="@string/_0"
+                android:textSize="56sp"
+                android:textStyle="normal" />
 
             <Button
+                style="@style/ButtonStyle"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
 
-                android:layout_marginLeft="24dp"
-
-                android:layout_marginRight="24dp"
                 android:layout_marginTop="24dp"
+
                 android:onClick="sixPointsTeamB"
-
-
                 android:text="@string/_6_point"
                 android:textSize="20sp" />
 
             <Button
+                style="@style/ButtonStyle"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
 
-                android:layout_marginLeft="24dp"
-
-                android:layout_marginRight="24dp"
-                android:layout_marginTop="8dp"
                 android:onClick="fourPointsTeamB"
-
-
-                android:text="@string/_4_point"
-                android:textSize="20sp" />
+                android:text="@string/_4_point" />
 
 
             <Button
+                style="@style/ButtonStyle"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
 
-                android:layout_marginLeft="24dp"
-
-                android:layout_marginRight="24dp"
-                android:layout_marginTop="8dp"
                 android:onClick="threePointsTeamB"
-
-                android:text="@string/_3_point"
-                android:textSize="20sp" />
+                android:text="@string/_3_point" />
 
             <Button
                 android:id="@+id/twoPointTeamB"
+                style="@style/ButtonStyle"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
 
-                android:layout_marginLeft="24dp"
-
-                android:layout_marginRight="24dp"
-                android:layout_marginTop="8dp"
                 android:onClick="twoPointTeamB"
-
-                android:text="@string/_2_point"
-                android:textSize="20sp" />
+                android:text="@string/_2_point" />
 
 
             <Button
+                style="@style/ButtonStyle"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
 
-                android:layout_marginLeft="24dp"
-                android:layout_marginRight="24dp"
-                android:layout_marginTop="8dp"
-
                 android:onClick="oneRunTeamB"
-
-                android:text="@string/_1_run"
-                android:textSize="20sp" />
+                android:text="@string/_1_run" />
 
 
         </LinearLayout>
@@ -252,17 +194,15 @@
         android:gravity="center_horizontal">
 
         <Button
+            style="@style/ButtonStyle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
 
             android:layout_alignParentBottom="true"
             android:layout_marginBottom="16dp"
 
-            android:onClick="ResetScore"
-            android:text="@string/reset"
-            android:textSize="30sp"
-            android:textStyle="bold" />
+            android:onClick="resetScore"
+            android:text="@string/reset" />
     </RelativeLayout>
-
 
 </android.support.constraint.ConstraintLayout>

@@ -1,7 +1,6 @@
 package com.bitbyte24seven.counter;
 
 import android.content.DialogInterface;
-import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
@@ -21,86 +20,86 @@ public class MainActivity extends AppCompatActivity {
     }
 
 
-    //display the score TeamA
+    //It is the Method to display the Score of Team A
     public void displayForTeamA(int score) {
-
         TextView scoreView = findViewById(R.id.team_a_score);
         scoreView.setText(String.valueOf(score));
     }
 
-    //onclick and Add 6 score
+    //onclick Method is using to add 6 Points in scoreTeamA
     public void sixPointsTeamA(View view) {
-        scoreTeamA = scoreTeamA + 6;
+        scoreTeamA += 6;
         displayForTeamA(scoreTeamA);
     }
 
-    //onnclick and add 4 score
+    //onnclick  Method is using to add 4 Points in scoreTeamA
     public void fourPointsTeamA(View view) {
         scoreTeamA = scoreTeamA + 4;
         displayForTeamA(scoreTeamA);
     }
 
-    //onclick and add 3 points  TeamA
+    //onclick  Method is using to add 3 Points in scoreTeamA
     public void threePoints(View view) {
         scoreTeamA = scoreTeamA + 3;
         displayForTeamA(scoreTeamA);
     }
 
-    //onclick and add 2 score  teamA
+    //onclick  Method is using to add 2 Points in scoreTeamA
     public void twoPoint(View view) {
         scoreTeamA = scoreTeamA + 2;
         displayForTeamA(scoreTeamA);
     }
 
-    //onclick and add 1 points TeamA
+    //onclick  Method is using to add 1 Points in scoreTeamA
     public void oneRunTeamA(View view) {
         scoreTeamA = scoreTeamA + 1;
         displayForTeamA(scoreTeamA);
     }
 
 
-    //display score Team B
+    //It is the Method to display the Score of Team B
     public void displayForTeamB(int scoreB) {
         TextView team_b_score = findViewById(R.id.team_b_score);
         team_b_score.setText(String.valueOf(scoreB));
     }
 
-    // onclick and add 6 score in Team B
+    //onclick Method is using to add 6 Points in scoreTeamB
     public void sixPointsTeamB(View view) {
-        scoreTeamB = scoreTeamB + 6;
+        scoreTeamB += 6;
         displayForTeamB(scoreTeamB);
     }
 
-    // onclick and add 4 score in Team B
+    //onclick Method is using to add 4 Points in scoreTeamB
     public void fourPointsTeamB(View view) {
-        scoreTeamB = scoreTeamB + 4;
+        scoreTeamB += 4;
         displayForTeamB(scoreTeamB);
     }
 
-    //onclick and add 3 points team B
+    //onclick Method is using to add 3 Points in scoreTeamB
     public void threePointsTeamB(View view) {
-        scoreTeamB = scoreTeamB + 3;
+        scoreTeamB += 3;
         displayForTeamB(scoreTeamB);
     }
 
-    //onclick and add 2 points team B
+    //onclick Method is using to add 2 Points in scoreTeamB
     public void twoPointTeamB(View view) {
-        scoreTeamB = scoreTeamB + 2;
+        scoreTeamB += 2;
         displayForTeamB(scoreTeamB);
     }
 
-    //onclick and add 1 pints team B
+    //onclick Method is using to add 1 Points in scoreTeamB
     public void oneRunTeamB(View view) {
-        scoreTeamB = scoreTeamB + 1;
+        scoreTeamB++;
         displayForTeamB(scoreTeamB);
     }
 
-    public void ResetScore(View view) {
+    public void resetScore(View view) {
 
+        //define the alert Dialog
         alertDialog();
     }
 
-    //set aleartDialog
+    //This the alertDialog Which help to user to give Choice to reset the Score to both Team
     public void alertDialog() {
         AlertDialog.Builder builder1 = new AlertDialog.Builder(this);
         builder1.setMessage("Do you want to reset.");
@@ -110,9 +109,10 @@ public class MainActivity extends AppCompatActivity {
                 "Yes",
                 new DialogInterface.OnClickListener() {
                     public void onClick(DialogInterface dialog, int id) {
-                        Intent intent = getIntent();
-                        finish();
-                        startActivity(intent);
+                        scoreTeamA = 0;
+                        scoreTeamB = 0;
+                        displayForTeamA(scoreTeamA);
+                        displayForTeamB(scoreTeamB);
                     }
                 });
 
