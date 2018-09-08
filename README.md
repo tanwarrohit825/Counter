@@ -6,6 +6,4 @@ track your team Score play And fun
 - Open **Android Studio .**
 - Go to **Open the new Project.**
 - Go to the file where you download.
-- Select the file and open it 
-![Image](C:\Users\tanwa\Documents/medley/resources/S12gRUbO7_BJ4c08WuQ.PNG)
-
+- Select the file and open it 
